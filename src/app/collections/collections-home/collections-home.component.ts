@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { TableComponent } from "../table/table.component";
 import { DividerComponent } from "../../shared/divider/divider.component";
+import { TabsComponent } from '../tabs/tabs.component';
+import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-collections-home',
   standalone: true,
-  imports: [TableComponent, DividerComponent],
+  imports: [TableComponent, DividerComponent, TabsComponent, RouterOutlet, RouterModule],
   templateUrl: './collections-home.component.html',
   styleUrl: './collections-home.component.css'
 })
